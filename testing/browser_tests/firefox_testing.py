@@ -1,12 +1,11 @@
 from selenium.webdriver import Firefox
 
+from browser_variables import Browser_Variables
+b_var = Browser_Variables()
+
 with Firefox() as browser:
+    browser.set_window_size(*b_var.win_size_phone)
 
     browser.get('https://www.keancshub.com')
-
-    # for later, https://www.selenium.dev/documentation/webdriver/browser_manipulation/#browser-navigation
-    # driver.current_url
-    # driver.set_window_size(1024, 768)
-    # driver.maximize_window()
 
     
