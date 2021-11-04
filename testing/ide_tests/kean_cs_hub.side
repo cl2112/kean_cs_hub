@@ -1,0 +1,77 @@
+{
+  "id": "03c6cd4b-3eb1-4eb7-a2b6-6f4eff78b7a5",
+  "version": "2.0",
+  "name": "kean_cs_hub",
+  "url": "https://www.keancshub.com",
+  "tests": [{
+    "id": "8697ec61-d4d6-4758-8144-7cb299c3d45f",
+    "name": "Check out the navbar links",
+    "commands": [{
+      "id": "d796a803-28c5-4fa4-9334-34aa7c76eb5d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f9ea245-476d-4a46-b9fc-2a9faa4c1abd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1490683-8011-4d35-b715-8abf747f2025",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Events",
+      "targets": [
+        ["linkText=Events", "linkText"],
+        ["css=.VsJjtf:nth-child(2) .aJHbb", "css:finder"],
+        ["xpath=(//a[contains(text(),'Events')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='WDxLfe']/ul/li[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/events')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/nav/ul/li[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d8d9d5-3d52-4052-b5a7-1153bec65374",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Resources",
+      "targets": [
+        ["linkText=Resources", "linkText"],
+        ["css=.FWGjId > .I35ICb > .aJHbb", "css:finder"],
+        ["xpath=(//a[contains(text(),'Resources')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='WDxLfe']/ul/li[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/resources')])[7]", "xpath:href"],
+        ["xpath=//div[2]/div/nav/ul/li[3]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79b18b09-4a2a-4d43-bdcf-1caa2202393a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PD for teachers",
+      "targets": [
+        ["linkText=PD for teachers", "linkText"],
+        ["css=.VsJjtf:nth-child(4) .aJHbb", "css:finder"],
+        ["xpath=(//a[contains(text(),'PD for teachers')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='WDxLfe']/ul/li[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/pd-for-teachers')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/nav/ul/li[4]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ac1b83ee-8530-46c7-bfcf-9a10804f51a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8697ec61-d4d6-4758-8144-7cb299c3d45f"]
+  }],
+  "urls": ["https://www.keancshub.com/"],
+  "plugins": []
+}
